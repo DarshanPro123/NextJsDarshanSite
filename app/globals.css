@@ -2,20 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 768px) {
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.typing-effect {
+  overflow: hidden;
+  /* Ensures the text is clipped */
+  white-space: nowrap;
+  /* Prevents text wrapping */
+  border-right: 4px solid #ffd700;
+  /* Creates the cursor effect */
+  width: 0;
+  /* Initial width for the typing effect */
+  animation: typing 3s steps(15) forwards, blink 0.7s step-end infinite;
+}
+
+.active {
+  color: #ffd700;
 }
