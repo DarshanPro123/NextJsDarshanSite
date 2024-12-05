@@ -32,7 +32,7 @@ export default function Home() {
           <a
             href="mailto:darshan.panchal@veerranvi.com"
             target="_blank"
-            className="bg-yellow-500 text-gray-950 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all duration-300 hidden sm:block lg:hidden"
+            className="bg-yellow-500 text-gray-950 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all duration-300 block sm:block lg:hidden"
           >
             Hire Me
           </a>
