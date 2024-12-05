@@ -28,11 +28,25 @@ export default function Home() {
         </div>
         {/* Hire Me Button */}
         <div className="mt-6">
+          {/* Mobile view */}
           <a
-            href="/contact" // Update this link to your contact form route
-            className="bg-yellow-500 text-gray-950 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all duration-300"
+            href="mailto:darshan.panchal@veerranvi.com"
+            target="_blank"
+            className="bg-yellow-500 text-gray-950 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition-all duration-300 hidden sm:block lg:hidden"
           >
             Hire Me
+          </a>
+
+          {/* Desktop view */}
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=darshan.panchal@veerranvi.com"
+            target="_blank"
+            className="relative bg-yellow-300 text-gray-950 px-6 py-3 rounded-lg text-lg font-semibold overflow-hidden group transition-all duration-300 hidden sm:hidden lg:block"
+          >
+            <span className="relative z-10">Hire Me</span>
+
+            {/* Water fill effect */}
+            <span className="absolute inset-0 bg-yellow-500  transform scale-y-0 origin-bottom transition-transform duration-300 ease-in-out group-hover:scale-y-100"></span>
           </a>
         </div>
       </div>
