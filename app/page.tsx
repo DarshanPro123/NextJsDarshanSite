@@ -16,7 +16,7 @@ export default function Home() {
           Hello!!
         </h4>
         <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-gray-300 mb-2">
-          I'm a Developer
+          I am a Developer
         </h2>
         {/* Boxed Name */}
         <div className="w-full flex justify-center md:justify-start">
