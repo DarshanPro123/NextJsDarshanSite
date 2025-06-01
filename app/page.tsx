@@ -1,6 +1,22 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="relative flex flex-col md:flex-row bg-gray-950 justify-between items-center mx-auto h-screen">
+      <a
+        aria-label="Chat on WhatsApp"
+        className="bg-[#23d366] z-50 text-white p-[14px] rounded-full fixed  bottom-14 ml-10 right-10"
+        href="https://wa.me/7990752137?text=Hello Darshan , How are you? 😃"
+        target="_blank"
+      >
+        <img
+          alt="Chat on WhatsApp"
+          src="https://static-00.iconduck.com/assets.00/whatsapp-icon-2040x2048-8b5th74o.png"
+          width={40}
+          height={40}
+        />
+      </a>
+
       {/* Image Section */}
       <div className="absolute inset-0 w-full h-full z-0">
         <img
